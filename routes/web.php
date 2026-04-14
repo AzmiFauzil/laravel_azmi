@@ -55,3 +55,6 @@ Route::post('/menu/beli/{id}', function ($id) {
     return redirect('/menu');
 });
 Route::get('/daftar_buku', [BooksController::class, 'index']);
+
+Route::get('/template/index', [BooksController::class, 'template']);
+Route::get('/template/create', [BooksController::class, 'create']);
